@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pago</title>
+        <script src="https://openpay.sandbox.mx/openpay.v1.min.js"></script>
+        <script src="https://openpay.sandbox.mx/openpay-data.v1.min.js"></script>
+        <script src="pago.js"></script>
+    </head>
+    <body>
+	<h1>Formulario de Pago</h1>
+	<form id="formulario-pago">
+	    <input type="hidden" id="campo-sesion">
+	    <input type="text" id="nombre-titular" placeholder="Nombre del titular">
+	    <input type="text" id="numero-tarjeta" placeholder="Número de tarjeta">
+	    <input type="text" id="mes-expiracion" placeholder="MM">
+	    <input type="text" id="anio-expiracion" placeholder="YY">
+	    <input type="text" id="cvv" placeholder="CVV">
+	    <input type="text" id="email-titular" placeholder="Correo electrónico">
+	    <butto type="submit">Pagar</button>
+	</form>
+	<div id="resultado"></div>
+    </body>
+</html>

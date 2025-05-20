@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenPay - Prueba de Pago</title>
+    <link rel="stylesheet" href="estilo_pagos.css">
+
+    <!-- Librerias de OpenPay -->
+    <script src="https://openpay.s3.amazonaws.com/openpay.v1.min.js"></script>
+    <script src="https://openpay.s3.amazonaws.com/openpay-data.v1.min.js"></script>
+</head>
+<body>
+
+<div class="contenedor">
+    <h2>Prueba API OpenPay</h2>
+    <form id="formulario-pago">
+        <label for="numero-tarjeta">Numero de Tarjeta</label>
+        <input type="text" id="numero-tarjeta" placeholder="4111111111111111" required>
+
+        <label for="nombre-titular">Nombre del Titular</label>
+        <input type="text" id="nombre-titular" placeholder="Juan Perez" required>
+
+        <label for="apellido-titular">Apellido del Titular</label>
+        <input type="text" id="apellido-titular" placeholder="Perez" required>
+
+        <label for="telefono-titular">Teléfono</label>
+        <input type="text" id="telefono-titular" placeholder="5555555555" required>
+    
+        <label for="email-titular">Correo Electrónico</label>
+        <input type="email" id="email-titular" placeholder="juan.perez@example.com" required>
+    
+
+        <label for="mes-expiracion">Mes de Expiracion</label>
+        <select id="mes-expiracion" required>
+            <option value="" disabled selected>MM</option>
+            <option value="01">01</option>
+            <option value="12">12</option>
+        </select>
+
+        <label for="anio-expiracion">Año de Expiracion</label>
+        <select id="anio-expiracion" required>
+            <option value="" disabled selected>YYYY</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+
+        <label for="cvv">CVV</label>
+        <input type="number" id="cvv" placeholder="123" required>
+
+        <input type="hidden" id="campo-sesion" name="device_session_id">
+
+        <button type="submit">Generar Token</button>
+    </form>
+
+    <p id="monto-a-pagar">Monto a pagar: $0.00</p>
+    <div class="resultado" id="resultado"></div>
+</div>
+
+<script src="pagos.js"></script>
+</body>
+</html>

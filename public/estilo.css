@@ -1,0 +1,64 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+.container { 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 5px; 
+    max-width: 500px; 
+    margin: 0 auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+label, input { 
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+input[type="text"], input[type="number"], input[type="file"] { 
+    width: 100%; 
+    padding: 8px; 
+}
+
+button { 
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+
+button:hover { 
+    background-color: #45a049; 
+}
+
+ul { 
+    list-style-type: none; 
+    padding: 0; 
+}
+
+li { 
+    background-color: #f4f4f4; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    display: flex; 
+    align-items: center; 
+}
+
+li img { 
+    margin-right: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+li button { 
+    background-color: red; 
+    padding: 5px 10px; 
+    color: white; 
+    margin-left: auto; 
+}
+
